@@ -30,7 +30,7 @@ public class AppConfig {
 		
 		http.sessionManagement(Management->Management.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 		     .authorizeHttpRequests(auth -> auth
-		                .requestMatchers("/api/**","/auth/signup","/auth/signing","/public/**","/api/progress/save").permitAll()  // Allow public access"
+		                .requestMatchers("/api/**","/auth/signup","/auth/signing","/public/**","/api/progress/save","/auth/send-otp","/auth/verify-otp","/auth/register","/auth/send-otp-register","/auth/verify-otp-register").permitAll()  // Allow public access"
 		                .requestMatchers("/api/progress/**").authenticated()		            )
 		     .addFilterBefore(new JwtTokenValidator(), BasicAuthenticationFilter.class)
 		     .csrf(csrf -> csrf.disable())

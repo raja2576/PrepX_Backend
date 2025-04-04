@@ -19,7 +19,7 @@ import com.prepXBackend.response.AuthResponse;
 import com.prepXBackend.service.CustomeUserDetailsImpl;
 import com.prepXBackend.service.UserService;
 
-@RestController
+//@RestController
 @RequestMapping("/auth")
 public class AuthController {
 

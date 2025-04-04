@@ -12,7 +12,7 @@ import com.prepXBackend.service.QuestionService;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000") // Allow frontend access if needed
+@CrossOrigin(origins = "*") // Allow frontend access if needed
 @RestController
 @RequestMapping("/api/admin")
 public class AdminQuestionController {
